@@ -10,11 +10,13 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 - Set NTFS and share permissions to allow domain users access
 - Map network drives to access shared folders
 - Configure GPOs to automatically map network drives for users
+- Implement quotas and file screening using File Server Resource Manager (FSRM)
 
 ### Tools Used
 
 - VMware Workstation Pro
 - Windows Server 2022
+- Group Policy Management
 
 ### Steps
 
@@ -78,4 +80,11 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 
 ![image](https://github.com/user-attachments/assets/5b26cfaf-4f83-4bd4-830d-dbdf2552df62)
 
+*Ref 16: Map drive GPO was successfully implemented on client's machine and it'll remain there even after rebooting*
+
+![image](https://github.com/user-attachments/assets/60b9f382-899f-461c-995d-ebb24343f996)
+
+*Ref 17: Activity 4: Implementing quotas and file screening using File Server Resource Manager (FSRM) 
+
+![image](https://github.com/user-attachments/assets/46918186-9b6e-48c6-b552-850ea9b75c69)
 
