@@ -17,6 +17,7 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 - VMware Workstation Pro
 - Windows Server 2022
 - Group Policy Management
+- File Server Resource Manager
 
 ### Steps
 
@@ -87,4 +88,28 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 *Ref 17: Activity 4: Implementing quotas and file screening using File Server Resource Manager (FSRM) 
 
 ![image](https://github.com/user-attachments/assets/46918186-9b6e-48c6-b552-850ea9b75c69)
+
+*Ref 18: Go to server manager to add the new role "File Server Resource Manager Tools"*
+
+![image](https://github.com/user-attachments/assets/62fe2d15-e195-435a-8fc7-ab482f39dab4)
+
+*Ref 19: File Server Resource Mananger Tool installed*
+
+![image](https://github.com/user-attachments/assets/91c2463c-0ae8-48a4-bc59-38e5ef5687c1)
+
+*Ref 20: Applying a quota on the SHARED folder. Best practice to set a quota on the file storage so users do not go over it. Buying extra storage gets expensive if its done every year.*
+
+![image](https://github.com/user-attachments/assets/db428948-ff09-4e35-8cd3-6924e092c3ba)
+
+*Ref 21: Setting up an alert on storage usage at 80%. Once it gets close to it, an email will be sent out to the admin let them know that a specific user just past the threshold and needs to remove files before hitting their storage limit*
+
+![image](https://github.com/user-attachments/assets/c45b22f3-cd56-40ee-a8ca-182038960799)
+
+*Ref 22: Creating File Screen for SHARED folder so that users cannot store any files types that could fill up their folders quickly, i.e. pictures, audio, or video files. Click on custom properties and from there you can choose what files to block*
+
+![image](https://github.com/user-attachments/assets/11913177-0b30-42b6-9470-9dd1a66ceef2)
+
+*Ref 23: Can also create a templete of the file screen for the folder*
+
+![image](https://github.com/user-attachments/assets/066e0de7-44ed-4b5a-9d62-c26b237d8872)
 
