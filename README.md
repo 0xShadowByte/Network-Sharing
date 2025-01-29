@@ -36,7 +36,7 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 
 ![image](https://github.com/user-attachments/assets/0a9dc45c-ba97-4fdf-93b6-686067dd0e90)
 
-*Ref 6: On client's machine we set up map network drive by right clicking on "this pc" then going to map network drive. From there select a drive you'll want but in this case I selected "S:" for our drive. Under folder, type in your server name and the shared folder. i.e. \\WIN-0G53M1m70MV\SHARED. Don't forget to uncheck *
+*Ref 6: On client's machine we set up map network drive by right clicking on "this pc" then going to map network drive. From there select a drive you'll want but in this case I selected "S:" for our drive. Under folder, type in your server name and the shared folder. i.e. \\WIN-0G53M1m70MV\SHARED. Don't forget to uncheck "reconnect at sign-in"*
 
 ![image](https://github.com/user-attachments/assets/9c22a900-833c-4c54-89a6-49ddba178203)
 
