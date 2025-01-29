@@ -16,7 +16,6 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 
 - VMware Workstation Pro
 - Windows Server 2022
-- Group Policy Management
 - File Server Resource Manager
 
 ### Steps
