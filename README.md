@@ -66,5 +66,16 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 
 ![image](https://github.com/user-attachments/assets/a9869242-eeb0-4278-8bac-7f082a11c948)
 
-*Ref 13: Going back to the the client machhine to test if the map drive GPO is applied correctly.*
+*Ref 13: Going back to the the client machhine to test if the map drive GPO is applied correctly. Since it didn't show up we need to force the update from the command prompt*
+
+![image](https://github.com/user-attachments/assets/79d50060-39f5-4e7a-b597-f6cea64f8ce7)
+
+*Ref 14: Using the command "gpupdate /force" in the command prompt to force the update*
+
+![image](https://github.com/user-attachments/assets/1c61f371-cc16-48e7-9565-3fa4345c7f6e)
+
+*Ref 15: Once the update is complete, go ahead and restart the computer to see if the update has been applied and we can see the map drive under shared network*
+
+![image](https://github.com/user-attachments/assets/5b26cfaf-4f83-4bd4-830d-dbdf2552df62)
+
 
