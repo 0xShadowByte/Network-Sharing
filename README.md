@@ -6,11 +6,10 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 
 ### Skills Learned
 
-- Learn how to create shared folders with appropriate permissions
-- Set NTFS and share permissions to allow domain users access
-- Map network drives to access shared folders
-- Configure GPOs to automatically map network drives for users
-- Implement quotas and file screening using File Server Resource Manager (FSRM)
+- Set up a file sharing: create shared folders with appropriate permissions and set NTFS and share permissions to allow domain users access
+- Set up client machines: map network drives to access shared folders
+- GPO Configuration: configure GPOs to automatically map network drives for users
+- Implement quotas and file screening using File Server Resource Manager (FSRM): configure FRSM to create Quota Template and File Screen Template to effectively manage File Storage in your organization
 
 ### Tools Used
 
