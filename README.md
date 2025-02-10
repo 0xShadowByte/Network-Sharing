@@ -117,4 +117,6 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 
 ### Sharing Files with NTFS Permission
 
+*Ref 24: such and such*
+
 
