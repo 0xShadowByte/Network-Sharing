@@ -1,4 +1,4 @@
-### Files and Network Sharing
+### Sharing Files on a Network: Shared VS NTSF
 
 ### Objective
   
