@@ -17,7 +17,7 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 - Windows Server 2022
 - File Server Resource Manager
 
-### Steps
+### Sharing files on a network with SHARED Permission 
 
 *Ref 1: Setting up File Services*
 
@@ -110,4 +110,7 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 *Ref 23: Can also create a templete of the file screen for the folder*
 
 ![image](https://github.com/user-attachments/assets/066e0de7-44ed-4b5a-9d62-c26b237d8872)
+
+### Sharing Files with NTFS Permission
+
 
