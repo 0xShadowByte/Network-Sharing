@@ -19,7 +19,7 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 
 ### Content
 - [Sharing files on a network with SHARED Permission](#Sharing-files-on-a-network-with-SHARED-Permission)
-- [Sharing files on a network with NTSF Permission](#Sharing-files-on-a-network-with-NTSF-Permissioon)
+- [Sharing files on a network with NTSF Permission](#Sharing-files-on-a-network-with-NTSF-Permission)
 
 ### Sharing files on a network with SHARED Permission 
 
