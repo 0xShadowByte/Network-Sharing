@@ -10,6 +10,9 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 - Set up client machines: map network drives to access shared folders
 - GPO Configuration: configure GPOs to automatically map network drives for users
 - Implement quotas and file screening using File Server Resource Manager (FSRM): configure FRSM to create Quota Template and File Screen Template to effectively manage File Storage in your organization
+- Understanding the different types of file sharing (local, network, and domain-based)
+- Learning how to assign permissions for specific user scenarios, such as restricting access for temporary staff.
+- Understanding explicit and inherited permissions and how they affect access.
 
 ### Tools Used
 
@@ -51,7 +54,9 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 
 ![image](https://github.com/user-attachments/assets/1b7cf044-51e3-4ce7-a01f-3c88e0c99f00)
 
-*Ref 8*: Configure GPOs to automatically map network drives for users (this process is better if the user needs constant access to the network shared folder) the pervious implemenation is suitable if the user needs to access the folder on one specific day.*
+*Ref 8*: Configure GPOs to automatically map network drives for users* 
+
+This process is better if the user needs constant access to the network shared folder. The pervious implemenation is suitable if the user needs to access the folder on one specific day.
 
 ![image](https://github.com/user-attachments/assets/5ae2f48d-39dc-484a-8b95-eb46bc052f5b)
 
@@ -87,7 +92,7 @@ Setting up network sharing on Windows Servers allows users and devices to secure
 
 ![image](https://github.com/user-attachments/assets/60b9f382-899f-461c-995d-ebb24343f996)
 
-*Ref 17: Activity 4: Implementing quotas and file screening using File Server Resource Manager (FSRM) 
+*Ref 17: Activity 4: Implementing quotas and file screening using File Server Resource Manager (FSRM)* 
 
 ![image](https://github.com/user-attachments/assets/46918186-9b6e-48c6-b552-850ea9b75c69)
 
