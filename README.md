@@ -140,7 +140,7 @@ If we go back to the Marketing "properties" tab and go to "security" tab to find
 
 *Ref 28-33: Setting up SHARE and NTFS for group*
 
-The HR Department needs a secure folder HRGroup that only HR staff can access. Other employees should not see the folder at all. Go to your windows server > right click the HRGroup folder > properties > advanced sharing > "click on share this folder". From here we notice that anyone has permission to view and edit the folders in the HRGroup. We only want HR employees to see it, not everyone, so we click on "everyone" > remove. Then we click "add" > add HRGroup > OK > give them "full control" under permission > apply. So now only HR has permission to see their folders. Once we get out of the "sharing" tab and go to "security" we notice that the NTFS permission has not been set up for the HR Group. If we click on user we can see that they only have read and execute and read list folder contents permissions in here so we also want to adjust the NTFS permissions for HR even if we already gave them full control in here and the shared permissions once they get into the sub folders and files under the HR Group they wont be able to do much but to just view the files because they don't have enough permissions in this NTFS level. So let's add them, click "users" > edit > add HR Group > Apply > OK. Afterwards we click on "full control" under permission to give them full control in the NTFS level.
+The HR Department needs a secure folder HRGroup that only HR staff can access. Other employees should not see the folder at all. *Go to your windows server > right click the HRGroup folder > properties > advanced sharing > "click on share this folder"*. From here we notice that anyone has permission to view and edit the folders in the HRGroup. We only want HR employees to see it, not everyone, *so we click on "everyone" > remove > add > add HRGroup > OK > give them "full control" under permission > apply*. So now only HR has permission to see their folders. Once we get out of the "sharing" tab and go to "security" we notice that the NTFS permission has not been set up for the HR Group. If we click on user we can see that they only have read and execute and read list folder contents permissions in here so we also want to adjust the NTFS permissions for HR even if we already gave them full control in here and the shared permissions once they get into the sub folders and files under the HR Group they wont be able to do much but to just view the files because they don't have enough permissions in this NTFS level. So let's add them, *click "users" > edit > add HR Group > Apply > OK*. Afterwards we click on "full control" under permission to give them full control in the NTFS level.
 
 ![image](https://github.com/user-attachments/assets/3c16d841-db4e-40c0-954d-6e013a8b23b4)
 
@@ -158,7 +158,7 @@ The HR Department needs a secure folder HRGroup that only HR staff can access. O
 
 *Ref 34-37: Setting up SHARE and NTFS for Third Party Vendor*
 
-A third-party vendor needs access to a temporary folder VendorFiles to upload reports but should not see other files. Click on VendorFiles > Sharing > "Share this folder" > Permissions > Add > Type in their name > Full Control. Third party vendor needs access to the folder vendor files to upload reports but should not see other files so this is the only folder that vendor need to see. Next we allow full control for the vendors on this shared permissions because they want to be able to upload and get to the other files under this shared folder. Now we go to the NTFS permission. Like before Security > Edit > Add the vendor > Unclick all permissions except for write. Going back to the activity, we're only allowing the vendors to upload reports. That's why we removed all the other permissions except for write so they can only upload files and not see the others. 
+A third-party vendor needs access to a temporary folder VendorFiles to upload reports but should not see other files. *Click on VendorFiles > Sharing > "Share this folder" > Permissions > Add > Type in their name > Full Control*. Third party vendor needs access to the folder vendor files to upload reports but should not see other files so this is the only folder that vendor need to see. Next we allow full control for the vendors on this shared permissions because they want to be able to upload and get to the other files under this shared folder. Now we go to the NTFS permission. Like before *Security > Edit > Add the vendor > Unclick all permissions except for write*. Going back to the activity, we're only allowing the vendors to upload reports. That's why we removed all the other permissions except for write so they can only upload files and not see the others. 
 
 ![image](https://github.com/user-attachments/assets/5309c2db-5e15-4aed-b547-e5c273fd231d)
 
@@ -170,7 +170,14 @@ A third-party vendor needs access to a temporary folder VendorFiles to upload re
 
 ## Hands-on activity 4
 
-*Ref 38: *
+*Ref 38: Setting up SHARE and NTFS for IT and Senior IT*
 
-In the IT Department, all techs need accesss to the Softare Repoository Software but only senior IT staff should be able to access the "Licenses" subfolder.
+In the IT Department, all techs need accesss to the Softare Repoository Software but only senior IT staff should be able to access the "Licenses" subfolder. *Software > Sharing > Permissions > Add > IT > Apply > give them Full control permission*. Similar steps as we've done in the previous activities to give SHARED permissions to a specific role to get access. The second part to the activity is to only allow access to the "Licenses" subfolder to senior IT. Adjust the subfolders permissions in here to only allwo the senior IT to access this so we have to change the NTFS permissions on this because it's a sub folder and we are only applying a certain permission on just this subfolder. This is were we can add the senior IT access in here, first we need to disable inheritance from this folder and set explict permissions to explicitly give the senior IT permissions to access this sub folder. *Right click on License > properties > security > advanced > disable inheritance > remove all inheritance > apply*. After this step you can see in here that it's denying all the users access to the licenses here. Next we're going to add the senior IT so they have explicit permission to aaccess this folder so no one can access this folder but the owner. *Security > Permissions > Edit > Add > Senior IT*. 
 
+![image](https://github.com/user-attachments/assets/686c0a95-2194-4746-9ea6-e1cbe0a20d9c)
+
+![image](https://github.com/user-attachments/assets/3bb03feb-157b-41cb-9f4f-0cf1d57c5a3a)
+
+![image](https://github.com/user-attachments/assets/545e77cd-7130-4fda-8dbf-6a8953b570a1)
+
+![image](https://github.com/user-attachments/assets/ee73e895-7bb1-4069-87cf-b16332c5aba9)
