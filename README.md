@@ -122,6 +122,9 @@ This process is better if the user needs constant access to the network shared f
 
 ### Sharing Files with NTFS Permission
 
-*Ref 24: such and such*
+*Ref 24: Hands-on activity 1*
+
+A Marketing Intern needs access to the Markting Team's shared folder "Marketing" to view content but shouldn't be able to modify, change or delete files in it. So it's a read only access for the
+
 
 
