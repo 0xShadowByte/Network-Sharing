@@ -122,15 +122,9 @@ This process is better if the user needs constant access to the network shared f
 
 ### Sharing Files with NTFS Permission
 
-*Ref 24-25: Hands-on activity 1*
+## Hands-on activity 1
 
-A Marketing Intern needs access to the Markting Team's shared folder "Marketing" to view content but shouldn't be able to modify, change or delete files in it. So it's a read only access for the marketing interns. We go to our marketing folder to apply the permissions by right clicking the folder > properties > sharing tab > advance sharing. This is where you can see the permission. Since marketing team is under the group "everyone" and the only permission available to the group "everyone" is read-only then its fine and nothing needs to be changed. 
-
-![image](https://github.com/user-attachments/assets/67ed9a47-3e0a-4320-8c47-5fd784ebb556)
-
-![image](https://github.com/user-attachments/assets/376b4fd4-eb69-47c6-b64d-efbedde0bb93)
-
-*Ref 26-29: Setting up the NTFS Permissions*
+*Ref 24-27: Setting up the NTFS Permissions*
 
 If we go back to the Marketing "properties" tab and go to "security" tab to find the NTFS permissions. As you can see there's more permissions in here compared to sharing earlier. There's full control, modify, read & execute, list folder content, read, write and special permissions. There are also different groups that you can add for this permission. Since the marketing interns are not added into the NTFS permissions yet, we are going to edit that. Click "edit" then we can add the marketing interns group because we want to set particular permissions for only view and not modify or delete files for the marketing intern. So if we go down the list of permissions, by default, read & execute, list folder contents nad read permissions are allowed. We only want to allow read permissions so we deselect the other two permissions click apply > OK. Afterwards if you click on the "Marketing Intern" group and look at their permissions, "read-only" should be only permission available. That's how you change the NTSF for a specific shared folder.
 
@@ -142,4 +136,41 @@ If we go back to the Marketing "properties" tab and go to "security" tab to find
 
 ![image](https://github.com/user-attachments/assets/9281c08d-c456-445f-bcc9-aa1032948a07)
 
+## Hands-on activty 2
+
+*Ref 28-33: Setting up SHARE and NTFS for group*
+
+The HR Department needs a secure folder HRGroup that only HR staff can access. Other employees should not see the folder at all. Go to your windows server > right click the HRGroup folder > properties > advanced sharing > "click on share this folder". From here we notice that anyone has permission to view and edit the folders in the HRGroup. We only want HR employees to see it, not everyone, so we click on "everyone" > remove. Then we click "add" > add HRGroup > OK > give them "full control" under permission > apply. So now only HR has permission to see their folders. Once we get out of the "sharing" tab and go to "security" we notice that the NTFS permission has not been set up for the HR Group. If we click on user we can see that they only have read and execute and read list folder contents permissions in here so we also want to adjust the NTFS permissions for HR even if we already gave them full control in here and the shared permissions once they get into the sub folders and files under the HR Group they wont be able to do much but to just view the files because they don't have enough permissions in this NTFS level. So let's add them, click "users" > edit > add HR Group > Apply > OK. Afterwards we click on "full control" under permission to give them full control in the NTFS level.
+
+![image](https://github.com/user-attachments/assets/3c16d841-db4e-40c0-954d-6e013a8b23b4)
+
+![image](https://github.com/user-attachments/assets/9939243a-584c-47af-95bc-5535bdd97c6d)
+
+![image](https://github.com/user-attachments/assets/e1fefa34-8432-4196-8ca0-6d3ebfc55b8f)
+
+![image](https://github.com/user-attachments/assets/6dc05233-668d-4a2b-af13-a19cdadd1a47)
+
+![image](https://github.com/user-attachments/assets/7b00558e-a991-48d1-8f18-ddfaccc103ce)
+
+![image](https://github.com/user-attachments/assets/27918c62-a9a8-4f23-983d-addcc2ce9d41)
+
+## Hands-on activity 3
+
+*Ref 34-37: Setting up SHARE and NTFS for Third Party Vendor*
+
+A third-party vendor needs access to a temporary folder VendorFiles to upload reports but should not see other files. Click on VendorFiles > Sharing > "Share this folder" > Permissions > Add > Type in their name > Full Control. Third party vendor needs access to the folder vendor files to upload reports but should not see other files so this is the only folder that vendor need to see. Next we allow full control for the vendors on this shared permissions because they want to be able to upload and get to the other files under this shared folder. Now we go to the NTFS permission. Like before Security > Edit > Add the vendor > Unclick all permissions except for write. Going back to the activity, we're only allowing the vendors to upload reports. That's why we removed all the other permissions except for write so they can only upload files and not see the others. 
+
+![image](https://github.com/user-attachments/assets/5309c2db-5e15-4aed-b547-e5c273fd231d)
+
+![image](https://github.com/user-attachments/assets/5746bc8e-43ac-4ed3-abc2-8b63ed215420)
+
+![image](https://github.com/user-attachments/assets/fb5f8a75-50da-4248-a648-4af6e64b7fc5)
+
+![image](https://github.com/user-attachments/assets/164c8eaa-a32d-4b5b-897a-810394485867)
+
+## Hands-on activity 4
+
+*Ref 38: *
+
+In the IT Department, all techs need accesss to the Softare Repoository Software but only senior IT staff should be able to access the "Licenses" subfolder.
 
