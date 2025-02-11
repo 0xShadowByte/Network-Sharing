@@ -122,9 +122,24 @@ This process is better if the user needs constant access to the network shared f
 
 ### Sharing Files with NTFS Permission
 
-*Ref 24: Hands-on activity 1*
+*Ref 24-25: Hands-on activity 1*
 
-A Marketing Intern needs access to the Markting Team's shared folder "Marketing" to view content but shouldn't be able to modify, change or delete files in it. So it's a read only access for the
+A Marketing Intern needs access to the Markting Team's shared folder "Marketing" to view content but shouldn't be able to modify, change or delete files in it. So it's a read only access for the marketing interns. We go to our marketing folder to apply the permissions by right clicking the folder > properties > sharing tab > advance sharing. This is where you can see the permission. Since marketing team is under the group "everyone" and the only permission available to the group "everyone" is read-only then its fine and nothing needs to be changed. 
 
+![image](https://github.com/user-attachments/assets/67ed9a47-3e0a-4320-8c47-5fd784ebb556)
+
+![image](https://github.com/user-attachments/assets/376b4fd4-eb69-47c6-b64d-efbedde0bb93)
+
+*Ref 26-29: Setting up the NTFS Permissions*
+
+If we go back to the Marketing "properties" tab and go to "security" tab to find the NTFS permissions. As you can see there's more permissions in here compared to sharing earlier. There's full control, modify, read & execute, list folder content, read, write and special permissions. There are also different groups that you can add for this permission. Since the marketing interns are not added into the NTFS permissions yet, we are going to edit that. Click "edit" then we can add the marketing interns group because we want to set particular permissions for only view and not modify or delete files for the marketing intern. So if we go down the list of permissions, by default, read & execute, list folder contents nad read permissions are allowed. We only want to allow read permissions so we deselect the other two permissions click apply > OK. Afterwards if you click on the "Marketing Intern" group and look at their permissions, "read-only" should be only permission available. That's how you change the NTSF for a specific shared folder.
+
+![image](https://github.com/user-attachments/assets/38acde8c-9809-4d5b-8630-23cbe9509a50)
+
+![image](https://github.com/user-attachments/assets/53702051-e556-493c-bac9-d6cd6234a130)
+
+![image](https://github.com/user-attachments/assets/1f29726e-25df-47bf-99a7-61c9d8968b4c)
+
+![image](https://github.com/user-attachments/assets/9281c08d-c456-445f-bcc9-aa1032948a07)
 
 
